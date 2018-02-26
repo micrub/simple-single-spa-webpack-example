@@ -9,17 +9,12 @@ module.exports = {
     'common-dependencies': [
       // We want just one version of angular, so we put it into the common dependencies
       'core-js/client/shim.min.js',
-      '@angular/common',
-      '@angular/compiler',
-      '@angular/core',
-      '@angular/platform-browser-dynamic',
-      '@angular/router',
       'reflect-metadata',
       /* Just one version of react, too. react-router is fine to have multiple versions of,
        * though, so no need to put it in common dependencies
        */
       'react',
-      'react-dom',
+      'react-dom'
     ],
   },
   output: {
