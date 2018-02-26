@@ -6,7 +6,7 @@ export function bootstrap(props) {
     .resolve()
     .then(() => {
       domEl = document.createElement('div');
-      domEl.id = 'stage-app';
+      domEl.id = 'simple-app';
       domEl.style = "margin-top:100px";
       document.body.appendChild(domEl);
     });
@@ -18,7 +18,7 @@ export function mount(props) {
     .resolve()
     .then(() => {
       // This is where you would normally use a framework to mount some ui to the dom. See https://github.com/CanopyTax/single-spa/blob/master/docs/single-spa-ecosystem.md.
-      domEl.textContent = 'Stage app is mounted!';
+      domEl.textContent = 'Simple app is mounted!';
     })
 }
 
